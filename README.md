@@ -174,11 +174,10 @@ Direct Digital Synthesis (DDS) algorithms with GPS correction provide exceptiona
    - Select appropriate COM port for your ESP32
    - Set baud rate to 921600
    - Add the binary files (.bin) with their respective addresses:
-     - bootloader.bin: 0x1000
-     - partitions.bin: 0x8000
-     - boot_app0.bin: 0xe000
-     - ESP32_SigGen_V.6.bin: 0x10000
-     - spiffs.bin: 0x290000
+     - ESP32_SigGen_... bootloader.bin: 0x1000
+     - ESP32_SigGen_...partitions.bin: 0x8000     
+     - ESP32_SigGen_....bin: 0x10000
+     
 4. Check "DoNotChgBin" for all files
 5. Click "START" to flash the ESP32
 6. Wait for the flashing process to complete (indicated by "FINISH")
@@ -188,15 +187,14 @@ Direct Digital Synthesis (DDS) algorithms with GPS correction provide exceptiona
 2. Power on the ESP32 and connect to its WiFi network "ESP32_SigGen" (default password: "password")
 3. Navigate to http://192.168.4.1/filemanager in your browser
 4. In the File Manager interface:
-   - Click "Choose File" and select all HTML files from the extracted archive
+   - Click "Choose File" and select all web related files from the extracted archive
    - Click "Upload" to send the files to the ESP32
-   - Repeat for CSS files in the `/css` folder (upload to `/css` directory)
-   - Repeat for JavaScript files in the `/js` folder (upload to `/js` directory)
-   - Repeat for any image files in the `/img` folder (upload to `/img` directory)
+   - All files can be uploaded at once (batch)
+
 5. The web interface files will be stored in the ESP32's SPIFFS file system
 
 ### About the Web Interface Archive
-The `ESP32_SigGen_WebUI.zip` archive contains all necessary files for the responsive web interface:
+The `WEB_GUI....zip` archive contains all necessary files for the responsive web interface:
 - HTML files for the main pages (index.html, control.html, wifi.html, filemanager.html)
 - CSS files for styling and responsive layout
 - JavaScript files for client-side functionality
