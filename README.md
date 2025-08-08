@@ -186,15 +186,16 @@ Direct Digital Synthesis (DDS) algorithms with GPS correction provide exceptiona
 1. Extract the `ESP32_SigGen_WebUI.zip` archive to a local folder
 2. Power on the ESP32 and connect to its WiFi network "ESP32_SigGen"
 3. Navigate to http://192.168.4.1/filemanager in your browser
-4. #define DEFAULT_AP_SSID "ESP32_SigGen"
-   #define DEFAULT_AP_PASSWORD "siggen123"
-   #define DEFAULT_HOSTNAME "siggen"
-5. In the File Manager interface:
+4. Here are AP default credentials:
+   -define DEFAULT_AP_SSID "ESP32_SigGen"
+   -define DEFAULT_AP_PASSWORD "siggen123"
+   -define DEFAULT_HOSTNAME "siggen"
+6. In the File Manager interface:
    - Click "Choose File" and select all web related files from the extracted archive
    - Click "Upload" to send the files to the ESP32
    - All files can be uploaded at once (batch)
 
-6. The web interface files will be stored in the ESP32's SPIFFS file system
+7. The web interface files will be stored in the ESP32's SPIFFS file system
 
 ### About the Web Interface Archive
 The `WEB_GUI....zip` archive contains all necessary files for the responsive web interface:
